@@ -42,7 +42,7 @@ INSERT INTO employee (first_name, last_name, gender, email, phone_number, docume
     ('juliana', 'jaramillo', 'Mujer', 'jj@mail.com', 78907892, 'Cedula', 23452346),
     ('pablo', 'rodriguez', 'Hombre', 'pr@mail.com', 78907893, 'Cedula', 34523456),
     ('pedro', 'coral', 'Hombre', 'pc@mail.com', 78907894, 'Cedula', 45234567),
-    ('paula', 'perez', 'Mujer   ', 'pp@mail.com', 78907895, 'Cedula', 52345678),
+    ('paula', 'perez', 'Mujer', 'pp@mail.com', 78907895, 'Cedula', 52345678),
     ('wiliam','wallace','Hombre', 'ww@email.com', 78907896, 'Cedula de extranjeria', 52345679),
     ('Kal', 'el', 'Hombre', 'kk@mail.com', 78907897, 'Otro', 452345680);
 
