@@ -1,5 +1,6 @@
 const {pool} =require('../db/index');
 
+
 exports.getEmployees = async (req,res) =>{
     try{
         const employees = await pool.query('SELECT * FROM employee');
@@ -25,10 +26,13 @@ exports.createEmployee = async (req, res) =>{
             info.document_number,
         ]
         await pool.query(text, values)
+
+       
         res.json({
             message: `Usuario ${info.first_name} creado satisfactoriamente.`
         }
-        )
+        )        
+
     } catch(error){
         res.status(400).json(error)
         console.log(error)
@@ -67,7 +71,7 @@ exports.updateEmployee = async (req, res) =>{
             gender: info.gender,
             email:info.email,
             phone_number: info.phone_number,
-            adress: info.address,
+            address: info.address,
             document_type: info.document_type,
             document_number:info.document_number,
             updated: info.updated
